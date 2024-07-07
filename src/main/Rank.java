@@ -1,3 +1,5 @@
+package main;
+
 public enum Rank {
     TWO(2),
     THREE(3),

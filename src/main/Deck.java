@@ -1,13 +1,15 @@
+package main;
+
 import java.util.Collections;
 import java.util.Stack;
 
-//an instance of a Deck object should build Deck. 
+//an instance of a main.Deck object should build main.Deck.
 // contains a shuffle deck and deal cards method
 
 public class Deck {
     Stack<Card> deckOfCards = new Stack<Card>();
 
-    Deck() {
+    public Deck() {
         buildDeck();
     }
     
@@ -28,6 +30,8 @@ public class Deck {
     }
 
     // deal: pop a card from the top of the card and return it
-
+    public Card dealCard() {
+        return deckOfCards.pop();
+    }
 
 }
